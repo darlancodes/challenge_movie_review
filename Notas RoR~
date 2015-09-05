@@ -1,0 +1,40 @@
+Notas de Aprendizado - Darlan Ricardo:
+------------------------------
+Criar o App com o bd mysql:
+rails new myapp -d mysql
+rake db:create
+
+**Adicionar a senha da base de dados no arquivo .yml dentro do config
+
+rails s
+------------------------------
+Para mudar a página que aparece no localhost:3000
+A configuração deve ser feita no root.rb
+
+------------------------------
+Após gerar as tables com o scaffold sempre:
+rake db:migrate
+
+------------------------------
+Sempre adicionar os gems(libraries and essential packages) links ao GemFile
+gem install depois...
+
+------------------------------
+ALL gem files needs configuration !!!
+Usando o gem devise (ótimo para autenticação) para autenticação:
+após criar usuário com o comando 'rails d devise User'
+dar um 'rake db:migrate' para que seja salvo na base de dados.
+
+------------------------------
+Mudar no controller.rb as definições
+current_user.filmes.build, para que o filme adicionado seja relacionado ao
+usuário logado.
+
+------------------------------
+Gem para adicionar imagens à determinado objeto.
+paperclip precisa do ImageMagick instalado
+Quick Start/Models -> adicionar o códico ao app model
+
+------------------------------
+Sempre adicionar novas tabelas criadas nestes parâmetros para que sejam exibidos na tela
+"params.require(:filme).permit(:titulo, :descricao, :duracao, :diretor, :avaliacao, :avatar)"

@@ -1,0 +1,22 @@
+<% if !user_signed_in? %>
+  <div class="jumbotron">
+    <h1>Resenhas dos seus Filmes Favoritos</h1>
+    <p>"So catch the trade winds, Experience, Dream, Discover..."</p>
+    <p><%= link_to "Cadastre-se para escrever uma Resenha", new_user_registration_path, class:"btn btn-primary btn-lg"%></p>
+              <!--btn-lg Button large ->Bootstrap -->
+  </div>
+<%end%>
+
+<div class="row">
+  <% @filmes.each do |filme|%>
+    <!--Classe bootstrap que permite determinar o número de colunas e linhas em uma div-->
+    <div class="col-sm-6 col-md-3">
+    <!--Exibição de imagens em uma div .thumbnail-->
+      <div class="thumbnail">
+        <!--Rails com o '=' representa um link para outra func-->
+        <%= link_to (image_tag filme.avatar.url(:medium), class:'image'), filme %>
+      </div>
+    </div>
+
+  <%end%>
+</div>
