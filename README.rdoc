@@ -1,3 +1,9 @@
-== README
+== Movie Rating Rails Application.
+
+ - Post Movies
+ - Post Grading (ratty.js)
+ - Post Commnets
+ - Add user authentication (gem device)
+ - Add images (imagemagik gem)
 
 Movie rating web application taught by @Mackenziechild
