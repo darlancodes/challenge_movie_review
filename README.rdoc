@@ -1,5 +1,6 @@
-== Movie Rating Rails Application.
+## Movie Rating Rails Application.
 
+Gems used in this project
  - Post Movies
  - Post Grading (ratty.js)
  - Post Commnets
